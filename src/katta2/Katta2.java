@@ -7,11 +7,11 @@ public class Katta2 {
 
     public static void main(String[] args) {
         // TODO code application logic here
-        Integer data[] = {4,7,4,6,2,32,6,3,6,3,65,2,3,6,};
+        String data[] = {"Rosa","Pepe","María","Pepe","Pepe","Rosa","Francisco","Marta","Juan","Juan"};
         Histogram histo = new Histogram(data);
-        Map<Integer,Integer> histogr = histo.getHistogram();
+        Map<String,Integer> histogr = histo.getHistogram();
         
-        for (Map.Entry<Integer, Integer> entry : histogr.entrySet()) {
+        for (Map.Entry<String, Integer> entry : histogr.entrySet()) {
             System.out.println(entry.getKey() + "==>" + entry.getValue());
         } 
   
